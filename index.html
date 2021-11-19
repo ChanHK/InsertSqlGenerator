@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+  </head>
+
+  <body>
+    <form enctype="multipart/form-data">
+      <input type="file" id="file" />
+    </form>
+    <textarea rows="20" cols="120" id="displayInJson" readonly></textarea>
+
+    <form id="form">
+      <h5>InsertSql</h5>
+      <textarea rows="20" cols="120" id="receiveInput"></textarea>
+      <input type="submit" />
+    </form>
+    <h5>Output</h5>
+    <textarea rows="20" cols="120" id="displayOutput" readonly> </textarea>
+
+    <h6>
+      Example: INSERT INTO table_name ("name", "email", "phone_no") VALUES
+    </h6>
+  </body>
+  <script src="index.js"></script>
+</html>
